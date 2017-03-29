@@ -1,14 +1,14 @@
-import { CardShellPage } from './app.po';
+import { CardShellPage } from './app.po'
 
 describe('card-shell App', () => {
-  let page: CardShellPage;
+  let page: CardShellPage
 
   beforeEach(() => {
-    page = new CardShellPage();
-  });
+    page = new CardShellPage()
+  })
 
   it('should display message saying app works', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
-  });
-});
+    page.navigateTo()
+    expect(page.getParagraphText()).toEqual('app works!')
+  })
+})
