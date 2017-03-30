@@ -7,4 +7,10 @@ import { Component } from '@angular/core'
 })
 export class AppComponent {
   title = 'card shell'
+  flipped = false
+  width = 300
+
+  flip(): void {
+    this.flipped = !this.flipped
+  }
 }
