@@ -1,9 +1,8 @@
 <div class="flip-container" [ngClass]="{'flip': flipped}"
-[ngStyle]="{'width': width + 48 + 'px'}">
+[ngStyle]="{'width': width + 'px'}">
 	<div class="flipper">
-		<div class="front">
-      <md-card style="min-height: 160px; max-width: 544px;"
-      [ngStyle]="{'width': width + 'px'}">
+		<div #front class="front">
+      <md-card style="min-height: 160px; max-width: 544px;">
         <md-card-header>
           <md-card-title>
           {{title}}
@@ -20,9 +19,8 @@
         </md-card-content>
       </md-card>
     </div>
-    <div class="back">
-      <md-card style="min-height: 160px; max-width: 544px;"
-      [ngStyle]="{'width': width + 'px'}">
+    <div class="back" [ngStyle]="{'width': width + 'px'}">
+      <md-card style="min-height: 160px; max-width: 544px;">
         <md-card-header>
           <div style="flex-grow: 4"> </div>
           <button (click)="flip()" style="align-self: flex-start;">
