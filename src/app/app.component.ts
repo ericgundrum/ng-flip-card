@@ -7,7 +7,7 @@ import { AfterViewInit, ChangeDetectorRef, ViewChild, ElementRef } from '@angula
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit {
-  title = 'card shell'
+  title = 'flip card'
   flipped = false
   width: number
   @ViewChild('front') front: ElementRef

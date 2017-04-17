@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy()
   }))
 
-  it(`should have as title 'card shell'`, async(() => {
+  it(`should have as title 'flip card'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent)
     const app = fixture.debugElement.componentInstance
-    expect(app.title).toEqual('card shell')
+    expect(app.title).toEqual('flip card')
   }))
 
   it('should render title in a md-card-title tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent)
     fixture.detectChanges()
     const compiled = fixture.debugElement.nativeElement
-    expect(compiled.querySelector('md-card-title').textContent).toContain('card shell')
+    expect(compiled.querySelector('md-card-title').textContent).toContain('flip card')
   }))
 })
