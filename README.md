@@ -1,6 +1,14 @@
-# CardShell
+# Angular Flip Card
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+A simple flip card UI built with
+[Angular Material Design](https://material.angular.io/).
+[Try it](https://ng2-flip-card.bencharts.com).
+
+Typically flip animation relies upon css knowing the size of its container. But
+[`md-card`](https://material.angular.io/components/component/card) will size itself to fit its content.
+Rather than code a specific size, this implementation takes the
+size from the `md-card` and binds that to the `flip-container`
+used for the animation.
 
 ## Development server
 
